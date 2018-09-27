@@ -13,8 +13,8 @@ class Student
   end
 
   def self.create_from_collection(students_array)
-    students_array.each do |k|
-      k
+    students_array.each do |key|
+      Student.new(key)
     end
   end
 
