@@ -7,17 +7,9 @@ class Student
 
   def initialize(student_hash)
     student_hash.each do |k,v|
-<<<<<<< HEAD
       self.send("#{k}=", v)
-  end  
+    end 
     @@all << self
-=======
-      self.send ("#{k}=", v)
-    binding.pry
-  end  
-    
-    @@all << student_hash
->>>>>>> ab055bf0f0b4392963f1d5f65701ed702e2f5a76
   end
 
   def self.create_from_collection(students_array)
